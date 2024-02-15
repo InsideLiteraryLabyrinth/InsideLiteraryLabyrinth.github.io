@@ -1,0 +1,148 @@
+baseURL = 'https://oliviabarnes.github.io'
+languageCode = 'en-us'
+defaultContentLanguage = "en"
+title = 'Olivia Barnes blog'
+theme = ["dream"]
+copyright="Reproduction without explicit permission is prohibited. All Rights Reserved. All photos remain copyright © their rightful owners. No copyright infringement is intended."
+
+# googleAnalytics = ""
+# disqusShortname = ""
+enableRobotsTXT = true
+enableEmoji = true
+
+# Instead of defining lastmod in front matter:
+#  - use the git author date or
+#  - the file modification time
+# when displaying .Lastmod on a page.
+enableGitInfo = true
+[frontmatter]
+lastmod = [':git', ':fileModTime']
+
+paginate = 10
+
+[params]
+  # assetDir = "static"
+  background = "#f7f7f7"
+  # backgroundImage = "/me/background1.webp"
+  linkColor = "seagreen"
+
+  # dark mode
+  # defaultDark = true
+  backgroundDark = "black"
+  # backgroundImageDark = "/me/background1-dark.webp"
+  darkLinkColor = "darkseagreen"
+  darkNav = true
+  dark404 = true
+
+  author = "Olivia Barnes"
+  name = "Olivia Barnes blog"
+  headerTitle = "Olivia Barnes"
+  description =""
+  motto = "I'm a 28-year-old librarian who enjoys classic literature and cozy mysteries."
+
+  # use true for chinese
+  hasCJKLanguage = false
+  avatar = "/img/avatar.webp"
+  maxTags = 5
+  # categoriesLimitInHeader = 6 # deprecated
+  # headerBottomText = "" # deprecated
+  # footerBottomText = ""
+  rss = true
+
+  # valine = true
+  # LEANCLOUD_APP_ID = ""
+  # LEANCLOUD_APP_KEY = ""
+  # VALINE_LANGUAGE = ""
+
+  siteStartYear = 2024
+
+  favicon = "/favicon.ico"
+
+  highlightjs = true
+  highlightjsCDN = "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js"
+  highlightjsExtraLanguages = ["ocaml"]
+  highlightjsTheme = "gruvbox-light"
+  highlightjsThemeDark = "gruvbox-dark"
+
+  # search
+  enableSearch = true
+
+  # options
+  showSummaryCoverInPost = true
+  hasTwitterEmbed = false
+  reversePostAndAside = true
+  shareInAside = true
+  fixedNav = true
+  collapsibleTags = true
+  collapseBySummary = true
+  #disableFlip = true
+  #hideBackSocialLinks = true
+
+  # [params.experimental]
+  #   jsDate = true
+  #   jsDateFormat = "yyyy年MM月dd日"
+
+  [params.advanced]
+      customCSS = ["css/custom.css"] # files in the list will be loaded in order
+  #    customJSBefore = ["js/custom-before.js"]
+      # customJS = ["js/custom.js"]
+
+  [outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+  [taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+  # default related settings
+  [related]
+    includeNewer = true
+    threshold = 80
+    toLower = false
+  [[related.indices]]
+      applyFilter = false
+      cardinalityThreshold = 0
+      name = 'keywords'
+      pattern = ''
+      toLower = false
+      type = 'basic'
+      weight = 100
+  [[related.indices]]
+      applyFilter = false
+      cardinalityThreshold = 0
+      name = 'date'
+      pattern = ''
+      toLower = false
+      type = 'basic'
+      weight = 10
+  [[related.indices]]
+      applyFilter = false
+      cardinalityThreshold = 0
+      name = 'tags'
+      pattern = ''
+      toLower = false
+      type = 'basic'
+      weight = 80
+
+  [imaging]
+   [imaging.exif]
+    disableDate = false
+    disableLatLong = false
+    excludeFields = ''
+    includeFields = ''
+
+[build]
+  writeStats = true
+  [build.buildStats]
+    enable = true
+
+# This will minify your CSS, HTML, JS, JSON, SVGs and XML automatically.
+# https://gohugo.io/getting-started/configuration/#configure-minify
+[minify]
+  minifyOutput = true
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
