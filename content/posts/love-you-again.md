@@ -1,7 +1,7 @@
 ---
 title: "A Review of \"Love You, Again: Short Stories on Sex, Loss, and Purpose\" by Alice Hlidkova"
 date: 2025-12-11T10:11:52+01:00
-cover: https://www.waltercedric.com/books/love-you-again-by-alice-hlidkova.webp
+cover: /books/love-you-again-by-alice-hlidkova.webp
 summary: "Love You, Again: Short Stories on Sex, Loss, and Purpose is one of those books. A collection of interconnected short stories, it traces the inner lives of women as they move through intimacy, grief, and the search for meaning not as grand revelations, but as moments of reckoning that unfold in the body as much as the mind."
 categories:
   - Books
